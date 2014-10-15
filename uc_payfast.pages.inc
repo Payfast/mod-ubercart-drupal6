@@ -88,9 +88,9 @@ function uc_payfast_itn()
 	}
 	
 	//check that the amount paid is the same as the order total
-    if ( ( int )$data[amount_gross] != ( int )$order->order_total )
+    if ( !pfAmountsEqual( $data['amount_gross'], $order->order_total ) )
     {
-        watchdog( 'payfast', 'The amount paid <> the order amount. 
+        watchdog( 'payfast', 'The amount paid '.$data['amount_gross'].' the order amount '.$order->order_total.' don\'t match. 
          | Order Number: ' . $data['m_payment_id'] . ' | Payfast Transaction ID: ' . $data['pf_payment_id'] );
         return false;
     }
