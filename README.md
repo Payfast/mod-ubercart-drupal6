@@ -21,9 +21,9 @@ Installation
 
 
 ******************************************************************************
-*                                                                            *
-*    Please see the URL below for all information concerning this module:    *
-*                                                                            *
-*              https://www.payfast.co.za/shopping-carts/ubercart/            *
-*                                                                            *
+
+    Please see the URL below for all information concerning this module:
+
+              https://www.payfast.co.za/shopping-carts/ubercart/
+
 ******************************************************************************
